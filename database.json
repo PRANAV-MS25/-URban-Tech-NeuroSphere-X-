@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1779261246580,
+        "position": [
+            13.029668961572009,
+            77.65181305467823
+        ],
+        "type": "Traffic Congestion",
+        "severity": "Medium"
+    },
+    {
+        "id": 1,
+        "position": [
+            12.9616,
+            77.5846
+        ],
+        "type": "Traffic Congestion",
+        "severity": "Medium"
+    }
+]
