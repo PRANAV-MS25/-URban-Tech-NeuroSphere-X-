@@ -109,12 +109,14 @@ git push
 
 
 
-## 📸 Platform Interface & Live Feature Showcase
+## 📸 Project Screenshots
 
-| Module | Interface Preview |
-| :--- | :--- |
-| **Primary Route Engine**<br>*Live traffic corridors & active hazard telemetry* | ![Primary Route Engine](Primary%20%20Route.png) |
-| **Aegis Radar & Diagnostics**<br>*Sector hazard scanning & system logs* | ![Radar and Diagnostics](radar%20and%20Diagnostics.png) |
-| **Alternate Safe Route Engine**<br>*Dynamic detour calculation avoiding high-risk zones* | ![Safe Route Engine](Safe%20Route.png) |
-| **Full Platform Overview**<br>*Complete dashboard overview* | ![Platform Overview](overview.png) |
+### 1. Navigation & Route Optimization
+| Primary Route Engine | Alternate Safe Route Engine |
+| :---: | :---: |
+| ![Primary Route Engine](Primary%20%20Route.png) | ![Safe Route Engine](Safe%20Route.png) |
 
+### 2. Diagnostics & System Overview
+| Aegis Radar & Diagnostics | Full Platform Overview |
+| :---: | :---: |
+| ![Radar and Diagnostics](radar%20and%20Diagnostics.png) | ![Platform Overview](overview.png) |
