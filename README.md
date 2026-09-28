@@ -1,4 +1,4 @@
-# 📡 AegisPulse-AI | Real-Time Tactical Airspace Radar & AI Threat Evaluator
+# 📡 URban-Tech-NeuroSphere-X | Real-Time Tactical Airspace Radar & AI Threat Evaluator
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
