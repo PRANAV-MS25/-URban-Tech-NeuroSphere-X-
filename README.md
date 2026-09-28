@@ -109,13 +109,17 @@ git push
 
 
 
+## 📸 Application Screenshots & Architecture Showcase
 
+### 1. Primary Route Engine
+![Primary Route Engine](Primary%20Route.png)
 
-## 📸 Application Screenshots & Interface Showcase
+### 2. Aegis Radar & Diagnostics
+![Radar and Diagnostics](Radar%20and%20Diagnostics.png)
 
-| Feature Module | Visual Interface |
-| :--- | :--- |
-| **Primary Route Engine**<br>_Direct routing with active hazard overlays_ | ![Primary Route Engine](Primary%20%20Route.png) |
-| **Aegis Radar & Diagnostics**<br>_Real-time sector scanner and corridor threat log_ | ![Radar and Diagnostics](radar%20and%20Diagnostics.png) |
-| **Alternate Safe Route Engine**<br>_Dynamic bypass calculation avoiding high-risk zones_ | ![Safe Route Engine](Safe%20Route.png) |
-| **Full Platform Overview**<br>_End-to-end urban transit telemetry view_ | ![Platform Overview](overview.png) |
+### 3. Alternate Safe Route Engine (Bypass)
+![Safe Route Engine](Safe%20Route.png)
+
+### 4. Full Platform Overview
+![Overview](overview.png)
+
