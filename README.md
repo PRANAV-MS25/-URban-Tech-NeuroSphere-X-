@@ -106,3 +106,16 @@ DOS
 git add README.md
 git commit -m "docs: complete updated README with proprietary license badge and full setup guide"
 git push
+
+
+
+
+
+## 📸 Application Screenshots & Interface Showcase
+
+| Feature Module | Visual Interface |
+| :--- | :--- |
+| **Primary Route Engine**<br>_Direct routing with active hazard overlays_ | ![Primary Route Engine](Primary%20%20Route.png) |
+| **Aegis Radar & Diagnostics**<br>_Real-time sector scanner and corridor threat log_ | ![Radar and Diagnostics](radar%20and%20Diagnostics.png) |
+| **Alternate Safe Route Engine**<br>_Dynamic bypass calculation avoiding high-risk zones_ | ![Safe Route Engine](Safe%20Route.png) |
+| **Full Platform Overview**<br>_End-to-end urban transit telemetry view_ | ![Platform Overview](overview.png) |
