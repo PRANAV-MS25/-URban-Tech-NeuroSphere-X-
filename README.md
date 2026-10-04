@@ -162,32 +162,48 @@ Aircraft Targets + Alerts + Telemetry
 
 ### 2. Clone the Repository
 
-bash
+```bash
 git clone https://github.com/PRANAV-MS25/-URban-Tech-NeuroSphere-X-.git
 cd -URban-Tech-NeuroSphere-X-
-3. Create a Virtual Environment
-Windows — Command Prompt
+```
+
+### 3. Create a Virtual Environment
+
+#### Windows — Command Prompt
+
+```cmd
 python -m venv venv
 venv\Scripts\activate
-macOS / Linux
+```
+
+#### macOS / Linux
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
-4. Install Dependencies
+```
+
+### 4. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-5. Run the Application
+```
 
-Start the URban-Tech-NeuroSphere-X FastAPI application using Uvicorn:
+### 5. Run the Application
 
+Start the **URban-Tech-NeuroSphere-X** FastAPI application using Uvicorn:
+
+```bash
 uvicorn backend.main:app --reload --port 8000
+```
 
-6. Access the Application
-| Service                                | Address                        | Purpose                                   |
-| :------------------------------------- | :----------------------------- | :---------------------------------------- |
-| **URban-Tech-NeuroSphere-X Interface** | `http://127.0.0.1:8000`        | Interactive tactical monitoring interface |
-| **WebSocket Endpoint**                 | `ws://127.0.0.1:8000/ws/radar` | Real-time radar telemetry stream          |
-| **FastAPI Documentation**              | `http://127.0.0.1:8000/docs`   | Interactive API documentation             |
+### 6. Access the Application
 
-
+| Service | Address | Purpose |
+| :--- | :--- | :--- |
+| **URban-Tech-NeuroSphere-X Interface** | `http://127.0.0.1:8000` | Interactive tactical monitoring interface |
+| **WebSocket Endpoint** | `ws://127.0.0.1:8000/ws/radar` | Real-time radar telemetry stream |
+| **FastAPI Documentation** | `http://127.0.0.1:8000/docs` | Interactive API documentation |
 🏃 Running the Application
 Start the FastAPI application using Uvicorn with hot reloading:
 uvicorn backend.main:app --reload --port 8000
