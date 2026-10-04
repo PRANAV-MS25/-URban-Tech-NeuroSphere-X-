@@ -150,27 +150,45 @@ Aircraft Targets + Alerts + Telemetry
 | **✈️ Aircraft Visualization**         | Displays aircraft targets, callsigns and telemetry information                      |
 | **📢 Alert System**                   | Presents tactical alert banners when relevant conditions are detected               |
 
-🚀 Quickstart & Setup Guide
-1. Prerequisites
-| Requirement             | Version / Description                                                 |
-| :---------------------- | :-------------------------------------------------------------------- |
-| **Python**              | Python 3.10 or higher                                                 |
-| **Git**                 | Required to clone the repository                                      |
+## 🚀 Quickstart & Setup Guide
+
+### 1. Prerequisites
+
+| Requirement | Version / Description |
+| :--- | :--- |
+| **Python** | Python 3.10 or higher |
+| **Git** | Required to clone the repository |
 | **Internet Connection** | Required to retrieve live aircraft telemetry from the OpenSky Network |
 
+### 2. Clone the Repository
 
-2. Clone the Repository
-python -m venv venv
-venv\Scripts\activate
-
+```
+bash
+git clone https://github.com/PRANAV-MS25/-URban-Tech-NeuroSphere-X-.git
+cd -URban-Tech-NeuroSphere-X-
 3. Create a Virtual Environment
 Windows — Command Prompt
 python -m venv venv
 venv\Scripts\activate
-
 macOS / Linux
 python3 -m venv venv
 source venv/bin/activate
+4. Install Dependencies
+pip install -r requirements.txt
+5. Run the Application
+
+Start the URban-Tech-NeuroSphere-X FastAPI application using Uvicorn:
+
+uvicorn backend.main:app --reload --port 8000
+6. Access the Application
+| Service                                | Address                        | Purpose                                   |
+| :------------------------------------- | :----------------------------- | :---------------------------------------- |
+| **URban-Tech-NeuroSphere-X Interface** | `http://127.0.0.1:8000`        | Interactive tactical monitoring interface |
+| **WebSocket Endpoint**                 | `ws://127.0.0.1:8000/ws/radar` | Real-time radar telemetry stream          |
+| **FastAPI Documentation**              | `http://127.0.0.1:8000/docs`   | Interactive API documentation             |
+
+
+
 
 🏃 Running the Application
 Start the FastAPI application using Uvicorn with hot reloading:
