@@ -162,7 +162,6 @@ Aircraft Targets + Alerts + Telemetry
 
 ### 2. Clone the Repository
 
-```
 bash
 git clone https://github.com/PRANAV-MS25/-URban-Tech-NeuroSphere-X-.git
 cd -URban-Tech-NeuroSphere-X-
@@ -180,7 +179,7 @@ pip install -r requirements.txt
 Start the URban-Tech-NeuroSphere-X FastAPI application using Uvicorn:
 
 uvicorn backend.main:app --reload --port 8000
-```
+
 6. Access the Application
 | Service                                | Address                        | Purpose                                   |
 | :------------------------------------- | :----------------------------- | :---------------------------------------- |
@@ -241,16 +240,19 @@ uvicorn backend.main:app --reload --port 8000
 | **Tactical Alerts**       | Visual alert banners for threat conditions                       |
 | **API Documentation**     | FastAPI interactive documentation through `/docs`                |
 
-📸 Project Screenshots
-1. Navigation & Route Optimization
-|               Primary Route Engine              |       Alternate Safe Route Engine      |
-| :---------------------------------------------: | :------------------------------------: |
-| ![Primary Route Engine](Primary%20%20Route.png) | ![Safe Route Engine](Safe%20Route.png) |
+## 📸 Project Screenshots
 
-2. Diagnostics & System Overview
-|                Aegis Radar & Diagnostics                |       Full Platform Overview       |
-| :-----------------------------------------------------: | :--------------------------------: |
-| ![Radar and Diagnostics](radar%20and%20Diagnostics.png) | ![Platform Overview](overview.png) |
+### 1. Navigation & Route Optimization
+
+| Primary Route Engine | Alternate Safe Route Engine |
+| :---: | :---: |
+| ![Primary Route Engine](./Primary%20%20Route.png) | ![Safe Route Engine](./Safe%20Route.png) |
+
+### 2. Diagnostics & System Overview
+
+| URban-Tech-NeuroSphere-X Radar & Diagnostics | Platform Overview |
+| :---: | :---: |
+| ![URban-Tech-NeuroSphere-X Radar and Diagnostics](./radar%20and%20Diagnostics.png) | ![URban-Tech-NeuroSphere-X Platform Overview](./overview.png) |
 ```
 🛡️ License
 
