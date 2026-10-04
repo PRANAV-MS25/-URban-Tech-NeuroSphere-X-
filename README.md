@@ -1,4 +1,4 @@
-# 📡 URban-Tech-NeuroSphere-X | Real-Time Tactical Airspace Radar & AI Threat Evaluator
+# 📡 URban-Tech-NeuroSphere-X | 
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
@@ -13,110 +13,30 @@
 
 ## 🚁 Overview
 
-**AegisPulse-AI** is an intelligent, real-time tactical air radar monitoring system centered around **Kempegowda International Airport (VOBL Ground Radar, Bengaluru)**. It pulls live ADS-B telemetry from the OpenSky Network, converts geographical coordinates into polar vectors (range and bearing), and streams live targets across a WebSockets pipeline to an interactive HTML5 Tactical Sweep radar interface.
+**URban-Tech-NeuroSphere-X** is an intelligent, real-time tactical airspace monitoring system centered around **Kempegowda International Airport (VOBL Ground Radar, Bengaluru)**.
 
-Integrated with a **Deterministic & LLM Tactical Threat Engine**, AegisPulse-AI dynamically categorizes airspace threats (`GREEN`, `YELLOW`, `RED`) based on emergency squawk codes (e.g., 7700/7600), altitude deltas, and velocity thresholds to deliver instant tactical advisory reports.
+The system retrieves live ADS-B telemetry from the **OpenSky Network**, processes aircraft geographical coordinates into tactical polar vectors such as **range and bearing**, and streams real-time aircraft data through a **WebSockets pipeline** to an interactive HTML5 tactical radar interface.
 
----
+The platform also integrates a **Deterministic & LLM Tactical Threat Engine** that evaluates aircraft conditions using emergency squawk codes, altitude changes, and velocity thresholds to categorize potential threats into:
 
-## ✨ Key Features
+- 🟢 `GREEN`
+- 🟡 `YELLOW`
+- 🔴 `RED`
 
-* **🛰️ Live ADS-B Tracking:** Streams active aircraft within a **300 km radius** of VOBL station using the OpenSky API.
-* **⚡ High-Performance WebSockets Pipeline:** Async data pipeline pushing real-time position updates every 5 seconds.
-* **🧭 Trigonometric Tactical Math:** Translates $Latitude/Longitude$ into $Range (km)$ and $Bearing (\degree)$ centered on radar coordinates.
-* **🚨 Threat Assessment Engine:** Dynamic rule matching and AI threat advisory generation for emergency situations.
-* **🖥️ Interactive HTML5 Radar UI:** Visual sweep interface rendering active blips, altitude vectors, callsigns, and alert banners.
+The resulting tactical information is presented through a live radar interface containing aircraft blips, callsigns, altitude information, telemetry data, and alert indicators.
 
 ---
 
-## 🏗️ System Architecture
+## 📁 Project Structure
 
 ```text
-       ┌────────────────────────┐
-       │ OpenSky Network API    │
-       │ (Live ADS-B Telemetry) │
-       └───────────┬────────────┘
-                   │
-                   ▼
-       ┌────────────────────────┐
-       │ AegisPulse Engine      │
-       │  - Polar Vector Calc   │
-       │  - Distance Filtering  │
-       └───────────┬────────────┘
-                   │
-                   ▼
-       ┌────────────────────────┐
-       │ Tactical Threat Engine │
-       │  - Squawk 7700/7600    │
-       │  - LLM Tactical Brief  │
-       └───────────┬────────────┘
-                   │ (WebSockets / JSON)
-                   ▼
-       ┌────────────────────────┐
-       │ Interactive Frontend   │
-       │  - Canvas Radar Sweep  │
-       │  - Live Target Table   │
-       └────────────────────────┘
-
- 🚀 Quickstart & Setup Guide
-1. Prerequisite Requirements
-Python 3.10+
-
-Git
-
-2. Clone the Repository
-Bash
-git clone [https://github.com/PRANAV-MS25/AegisPulse-AI.git](https://github.com/PRANAV-MS25/AegisPulse-AI.git)
-cd AegisPulse-AI
-3. Create & Activate Virtual Environment
-Windows (Command Prompt):
-
-DOS
-python -m venv venv
-venv\Scripts\activate
-macOS / Linux:
-
-Bash
-python3 -m venv venv
-source venv/bin/activate
-4. Install Dependencies
-Bash
-pip install -r requirements.txt
-🏃 Running the Application
-Start the FastAPI application with Uvicorn hot-reloading:
-
-Bash
-uvicorn backend.main:app --reload --port 8000
-Access Points:
-Tactical Radar UI: http://127.0.0.1:8000
-
-WebSocket Endpoint: ws://127.0.0.1:8000/ws/radar
-
-Interactive API Documentation: http://127.0.0.1:8000/docs
-
-🛡️ License
-Copyright (c) 2026 M Pranav. All Rights Reserved.
-
-This repository and its contents are strictly proprietary. No part of this project may be reproduced, distributed, or modified without explicit written permission.
-
-Push changes to GitHub
-Run these terminal commands to send the updated README.md live to your repository:
-
-DOS
-git add README.md
-git commit -m "docs: complete updated README with proprietary license badge and full setup guide"
-git push
-
-
-
-## 📸 Project Screenshots
-
-### 1. Navigation & Route Optimization
-| Primary Route Engine | Alternate Safe Route Engine |
-| :---: | :---: |
-| ![Primary Route Engine](Primary%20%20Route.png) | ![Safe Route Engine](Safe%20Route.png) |
-
-### 2. Diagnostics & System Overview
-| Aegis Radar & Diagnostics | Full Platform Overview |
-| :---: | :---: |
-| ![Radar and Diagnostics](radar%20and%20Diagnostics.png) | ![Platform Overview](overview.png) |
+URban-Tech-NeuroSphere-X/
+├── backend/
+│   └── main.py
+├── requirements.txt
+├── README.md
+│
+├── Primary  Route.png
+├── Safe Route.png
+├── radar and Diagnostics.png
+└── overview.png
