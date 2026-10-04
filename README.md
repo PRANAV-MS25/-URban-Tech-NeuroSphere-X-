@@ -180,14 +180,13 @@ pip install -r requirements.txt
 Start the URban-Tech-NeuroSphere-X FastAPI application using Uvicorn:
 
 uvicorn backend.main:app --reload --port 8000
+```
 6. Access the Application
 | Service                                | Address                        | Purpose                                   |
 | :------------------------------------- | :----------------------------- | :---------------------------------------- |
 | **URban-Tech-NeuroSphere-X Interface** | `http://127.0.0.1:8000`        | Interactive tactical monitoring interface |
 | **WebSocket Endpoint**                 | `ws://127.0.0.1:8000/ws/radar` | Real-time radar telemetry stream          |
 | **FastAPI Documentation**              | `http://127.0.0.1:8000/docs`   | Interactive API documentation             |
-
-
 
 
 🏃 Running the Application
