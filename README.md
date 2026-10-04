@@ -152,11 +152,12 @@ Aircraft Targets + Alerts + Telemetry
 
 🚀 Quickstart & Setup Guide
 1. Prerequisites
-| Requirement             | Version / Description                       |
-| :---------------------- | :------------------------------------------ |
-| **Python**              | Python 3.10+                                |
-| **Git**                 | Required for repository cloning             |
-| **Internet Connection** | Required for live OpenSky Network telemetry |
+| Requirement             | Version / Description                                                 |
+| :---------------------- | :-------------------------------------------------------------------- |
+| **Python**              | Python 3.10 or higher                                                 |
+| **Git**                 | Required to clone the repository                                      |
+| **Internet Connection** | Required to retrieve live aircraft telemetry from the OpenSky Network |
+
 
 2. Clone the Repository
 python -m venv venv
@@ -228,6 +229,7 @@ uvicorn backend.main:app --reload --port 8000
 |               Primary Route Engine              |       Alternate Safe Route Engine      |
 | :---------------------------------------------: | :------------------------------------: |
 | ![Primary Route Engine](Primary%20%20Route.png) | ![Safe Route Engine](Safe%20Route.png) |
+
 2. Diagnostics & System Overview
 |                Aegis Radar & Diagnostics                |       Full Platform Overview       |
 | :-----------------------------------------------------: | :--------------------------------: |
